@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ian 小红书图文"
+  short_description: "把中文内容排成 3:4 小红书轮播图，20 个母版，浅色深色都能出"
+  default_prompt: "Use $ian-xhs-carousel to 把这篇内容做成一组小红书图文，先出分镜表。"
+policy:
+  allow_implicit_invocation: true

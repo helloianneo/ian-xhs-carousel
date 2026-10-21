@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>这期的名字</title>
+<link rel="stylesheet" href="xhs.css">
+<style>
+/* 这一期特有的样式写这里，版式和颜色全部来自 xhs.css
+ * 页序：T01 封面 → … → T19 结尾 */
+</style>
+</head>
+<!-- 深色版：<body data-theme="dark">，或者渲染时加 --theme dark -->
+<body>
+
+<section class="slide" data-layout="T01 封面 · 对话框">
+  <header class="head head--center">
+    <p class="chip">栏目名</p>
+    <h1 class="t-display">封面标题<br>两行最好看</h1>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="bar"><i class="ic" data-i="code"></i><p class="bar__title">窗口标题</p><i class="ic" data-i="close"></i></div>
+      <div class="dialog-body"><div class="ph" style="height:497px"></div></div>
+      <div class="foot"><p class="foot__note">一句补充说明</p><span class="btn btn--primary">主要操作</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 中间各页：从 templates.html 抄对应母版，把 .ph 换成真内容 -->
+
+<section class="slide slide--end" data-layout="T19 结尾 · 对照">
+  <div class="stage stage--top"><div class="ph" style="width:760px;height:497px"></div></div>
+  <header class="head head--center">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">结尾标题<br>两行最好看</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="card split">
+    <div class="row diff"><p class="diff__key">名称</p><p class="row__head grow">条目内容</p></div>
+    <div class="row diff"><p class="diff__key">名称</p><p class="row__head grow">条目内容</p></div>
+  </div>
+</section>
+
+<script src="xhs.js"></script>
+<script src="figure-kit.js"></script>
+<script>
+  // 这期的配图写在这里或单独的 figures.js，画图函数用 FigureKit.onTheme(draw) 包一下
+</script>
+</body>
+</html>

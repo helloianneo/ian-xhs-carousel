@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+
+# Local generated outputs
+generated/
+outputs/
+dist/
+__pycache__/
+_*@2x.png
+
+# Local editor files
+.idea/
+.vscode/
+
+# Logs
+*.log

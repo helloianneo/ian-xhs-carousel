@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>版式库 · 20 个母版</title>
+<link rel="stylesheet" href="xhs.css">
+</head>
+<body>
+<!-- 每个 section 是一个母版。用的时候整段抄进 index.html，把 .ph 占位换成真内容，字换成这期的字
+     结构和类名都来自 xhs.css -->
+
+<!-- ===================== 封面 ===================== -->
+
+<section class="slide" data-layout="T01 封面 · 对话框">
+  <header class="head head--center">
+    <p class="chip">栏目名</p>
+    <h1 class="t-display">封面标题放在这里<br>两行最好看</h1>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="bar"><i class="ic" data-i="code"></i><p class="bar__title">窗口标题</p><i class="ic" data-i="close"></i></div>
+      <div class="dialog-body"><div class="ph" style="height:497px"></div></div>
+      <div class="foot"><p class="foot__note">一句补充说明</p><span class="btn">次要操作</span><span class="btn btn--primary">主要操作</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T02 封面 · 窗口">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h1 class="t-display">封面标题放在这里<br>两行最好看</h1>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="chrome"><p class="chrome__address t-caption c-muted">example.com</p></div>
+      <div class="ph ph--flat" style="height:760px"></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T03 封面 · 通知">
+  <header class="head head--center">
+    <p class="chip">栏目名</p>
+    <h1 class="t-display">封面标题放在这里<br>两行最好看</h1>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="notes">
+      <div class="card note">
+        <div class="ph note__icon"></div>
+        <div class="note__text">
+          <p class="note__meta"><span>应用名</span><span>现在</span></p>
+          <p class="row__head">第一条，最想让人看到的</p>
+          <p class="row__note">一句说明，十五字以内</p>
+        </div>
+      </div>
+      <div class="card note">
+        <div class="ph note__icon"></div>
+        <div class="note__text">
+          <p class="note__meta"><span>应用名</span><span>2 分钟前</span></p>
+          <p class="row__head">第二条</p>
+          <p class="row__note">一句说明，十五字以内</p>
+        </div>
+      </div>
+      <div class="pile">
+        <div class="card note">
+          <div class="ph note__icon"></div>
+          <div class="note__text">
+            <p class="note__meta"><span>应用名</span><span>昨天</span></p>
+            <p class="row__head">第三条</p>
+            <p class="row__note">一句说明，十五字以内</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 讲做法 ===================== -->
+
+<section class="slide" data-layout="T04 步骤 · 文档">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card split">
+      <div class="row"><span class="badge">1</span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div><div class="ph" style="width:232px;height:148px"></div></div>
+      <div class="row"><span class="badge">2</span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div><div class="ph" style="width:232px;height:148px"></div></div>
+      <div class="row"><span class="badge">3</span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div><div class="ph" style="width:232px;height:148px"></div></div>
+    </div>
+    <div class="hstack">
+      <div class="card mini"><div class="ph" style="width:176px;height:176px"></div><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，<br>两行以内</p></div></div>
+      <div class="card mini"><div class="ph" style="width:176px;height:176px"></div><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，<br>两行以内</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T05 清单 · 待办">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card split">
+      <div class="row todo__head"><p class="row__head grow">清单名称</p><p class="t-num c-muted">2/5</p></div>
+      <div class="row todo is-done"><span class="box"><i class="ic" data-i="check"></i></span><div class="row__text"><p class="row__head">已经做完的一项</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="row todo is-done"><span class="box"><i class="ic" data-i="check"></i></span><div class="row__text"><p class="row__head">已经做完的一项</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="row todo"><span class="box"></span><div class="row__text"><p class="row__head">还没做的一项</p><p class="row__note">一句说明，十五字以内</p></div><span class="tag tag--orange">标签</span></div>
+      <div class="row todo"><span class="box"></span><div class="row__text"><p class="row__head">还没做的一项</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="row todo"><span class="box"></span><div class="row__text"><p class="row__head">还没做的一项</p><p class="row__note">一句说明，十五字以内</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T06 时间线 · 动态">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <ol class="card timeline">
+      <li><p class="timeline__when">第 1 天</p><div class="row__text"><p class="row__head">第一件事</p><p class="row__note">一句说明，十五字以内</p></div></li>
+      <li><p class="timeline__when">第 3 天</p><div class="row__text"><p class="row__head">第二件事</p><p class="row__note">一句说明，十五字以内</p></div></li>
+      <li><p class="timeline__when">第 7 天</p><div class="row__text"><p class="row__head">第三件事</p><p class="row__note">一句说明，十五字以内</p></div></li>
+      <li><p class="timeline__when">第 14 天</p><div class="row__text"><p class="row__head">第四件事</p><p class="row__note">一句说明，十五字以内</p></div></li>
+      <li class="is-now"><p class="timeline__when">现在</p><div class="row__text"><p class="row__head">最后一件事</p><p class="row__note">一句说明，十五字以内</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== 对比 ===================== -->
+
+<section class="slide" data-layout="T07 对比 · 对错">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-display">这页的标题<br>一行八九个字</h2>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="bar"><i class="ic" data-i="info"></i><p class="bar__title">窗口标题</p><i class="ic" data-i="close"></i></div>
+      <div class="row row--loose"><span class="badge badge--green"><i class="ic" data-i="check"></i></span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，<br>两行以内</p></div><span class="tag tag--green">标签</span></div>
+      <div class="row row--loose"><span class="badge"><i class="ic" data-i="cross"></i></span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，<br>两行以内</p></div><span class="tag">标签</span></div>
+      <div class="foot"><p class="foot__note">一句补充说明</p><span class="btn btn--primary">主要操作</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T08 前后 · 双栏">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="hstack hstack--wide">
+      <div class="card versus"><span class="tag">之前</span><div class="ph" style="height:520px"></div><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="card versus"><span class="tag tag--orange">之后</span><div class="ph" style="height:520px"></div><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 展示 ===================== -->
+
+<section class="slide" data-layout="T09 宫格 · 卡片">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="grid2">
+      <div class="card card--accent tile"><div class="ph" style="height:236px"></div><div class="row__text"><p class="row__head">例子名称 <span class="tag tag--orange">标签</span></p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="card tile"><div class="ph" style="height:236px"></div><div class="row__text"><p class="row__head">例子名称</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="card tile"><div class="ph" style="height:236px"></div><div class="row__text"><p class="row__head">例子名称</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="card tile"><div class="ph" style="height:236px"></div><div class="row__text"><p class="row__head">例子名称</p><p class="row__note">一句说明，十五字以内</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide slide--tight" data-layout="T10 标注 · 截图">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+  </header>
+  <div class="stage" data-accent>
+    <div class="card card--dialog split">
+      <div class="chrome"><p class="chrome__title">窗口标题</p></div>
+      <div class="shot">
+        <div class="ph ph--flat" style="height:400px"></div>
+        <span class="badge badge--orange pin" style="left:120px;top:90px">1</span>
+        <span class="badge badge--orange pin" style="left:640px;top:150px">2</span>
+        <span class="badge badge--orange pin" style="left:300px;top:330px">3</span>
+      </div>
+    </div>
+    <div class="card split">
+      <div class="row"><span class="badge badge--soft">1</span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="row"><span class="badge badge--soft">2</span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div></div>
+      <div class="row"><span class="badge badge--soft">3</span><div class="row__text"><p class="row__head">条目标题</p><p class="row__note">一句说明，十五字以内</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T11 手机 · 截图">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage stage--fill">
+    <div class="phones">
+      <div class="phones__item"><span class="tag">标签</span><div class="phone"><div class="ph"></div></div></div>
+      <div class="phones__item phones__item--low"><span class="tag tag--orange">标签</span><div class="phone"><div class="ph"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T12 列表 · 应用">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="search"><i class="ic" data-i="search"></i><p class="t-body c-muted grow">搜索</p><p class="t-caption c-faint">5 个</p></div>
+      <ul class="apps">
+        <li class="is-active"><div class="ph app-icon"></div><div class="row__text"><p class="row__head">应用名称</p><p class="row__note">一句说明，十五字以内</p></div><span class="tag tag--orange">标签</span></li>
+        <li><div class="ph app-icon"></div><div class="row__text"><p class="row__head">应用名称</p><p class="row__note">一句说明，十五字以内</p></div><span class="tag">标签</span></li>
+        <li><div class="ph app-icon"></div><div class="row__text"><p class="row__head">应用名称</p><p class="row__note">一句说明，十五字以内</p></div><span class="tag">标签</span></li>
+        <li><div class="ph app-icon"></div><div class="row__text"><p class="row__head">应用名称</p><p class="row__note">一句说明，十五字以内</p></div><span class="tag">标签</span></li>
+        <li><div class="ph app-icon"></div><div class="row__text"><p class="row__head">应用名称</p><p class="row__note">一句说明，十五字以内</p></div><span class="tag">标签</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 数字 ===================== -->
+
+<section class="slide slide--tight" data-layout="T13 数据 · 指标">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card metric" data-accent>
+      <p class="t-caption c-muted">指标名称</p>
+      <p class="metric__value"><span class="t-metric">12,480</span><span class="t-body c-muted">单位</span></p>
+      <div class="bars">
+        <i style="height:70px"></i><i style="height:96px"></i><i style="height:84px"></i><i style="height:128px"></i><i style="height:112px"></i><i style="height:150px"></i><i class="is-hot" style="height:210px"></i>
+      </div>
+      <div class="bars__axis"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span class="c-orange">日</span></div>
+    </div>
+    <div class="hstack hstack--wide">
+      <div class="card metric metric--sm"><p class="t-caption c-muted">指标名称</p><p class="metric__value"><span class="t-metric-sm">86%</span><span class="tag tag--green">+12%</span></p></div>
+      <div class="card metric metric--sm"><p class="t-caption c-muted">指标名称</p><p class="metric__value"><span class="t-metric-sm">3.2 秒</span><span class="tag tag--green">−0.8</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide slide--tight" data-layout="T14 参数 · 设置">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage settings">
+    <div class="settings__group">
+      <p class="settings__label">分组名称</p>
+      <div class="card split">
+        <div class="setting"><p class="setting__key">名称</p><p class="setting__value">数值</p></div>
+        <div class="setting"><p class="setting__key">名称</p><span class="swatch" style="background:var(--orange)"></span><p class="setting__value">#EA580C</p></div>
+        <div class="setting"><p class="setting__key">名称</p><p class="setting__value">24 px</p></div>
+      </div>
+    </div>
+    <div class="settings__group">
+      <p class="settings__label">分组名称</p>
+      <div class="card split">
+        <div class="setting"><p class="setting__key">名称</p><span class="toggle is-on"></span></div>
+        <div class="setting"><p class="setting__key">名称</p><p class="setting__value">选项</p><i class="ic c-faint" data-i="chevron-right"></i></div>
+        <div class="setting"><p class="setting__key">名称</p><p class="setting__value">选项</p><i class="ic c-faint" data-i="chevron-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 文字 ===================== -->
+
+<section class="slide slide--center" data-layout="T15 观点 · 大字">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-display">这里放一句判断<br>大字最多四行<br>每行九个字左右<br><span class="c-orange">读完就记住了</span></h2>
+  </header>
+  <div class="card callout"><i class="ic" data-i="info"></i><p class="t-caption c-body">展开说一两句，六十字以内。讲清楚为什么这么想，或者什么情况下不成立，看的人能自己判断。</p></div>
+</section>
+
+<section class="slide slide--tight" data-layout="T16 对话 · 聊天">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="bar"><i class="ic" data-i="sparkle"></i><p class="row__head">模型名</p><i class="ic" data-i="chevron-down"></i></div>
+      <div class="chat">
+        <p class="chat__me">问的那句话，一行以内</p>
+        <div class="chat__ai"><span class="avatar"><i class="ic" data-i="sparkle"></i></span><p>回答放在这里，两三行就够。重点那句可以单独成段，别把整段回答都贴上来。</p></div>
+        <p class="chat__me">追问一句</p>
+        <div class="chat__ai"><span class="avatar"><i class="ic" data-i="sparkle"></i></span><p>第二段回答，一两行。</p></div>
+        <div class="input"><i class="ic" data-i="paperclip"></i><p class="grow">输入框提示文字</p><span class="btn btn--primary btn--round"><i class="ic" data-i="arrow-up"></i></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T17 提示词 · 输入框">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题放在这里</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="composer__top"><span class="model"><i class="ic" data-i="sparkle"></i>模型名<i class="ic" data-i="chevron-down"></i></span><span class="grow"></span><span class="tag">标签</span></div>
+      <div class="prompt">
+        <p>这里放完整的提示词。第一段交代要做什么、用什么做，看的人扫一眼就知道是干嘛的。</p>
+        <p>1. 第一步要做的事，写清楚输入和输出。</p>
+        <p>2. 第二步要做的事，写清楚判断标准。</p>
+        <p>3. 第三步要做的事，写清楚交互和动效。</p>
+        <p>4. 第四步要做的事，写清楚怎么检查。</p>
+        <p>最后一句说明怎么交付。</p>
+      </div>
+      <div class="composer__bottom"><i class="ic" data-i="paperclip"></i><p class="foot__note">一句补充说明</p><span class="btn btn--round"><i class="ic" data-i="copy"></i></span><span class="btn btn--primary btn--round"><i class="ic" data-i="arrow-up"></i></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide slide--tight" data-layout="T18 代码 · 编辑器">
+  <header class="head">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">这页的标题<br>一行八九个字</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="tabs"><span class="tabs__item is-active"><i class="ic c-orange" data-i="code"></i>index.html</span><span class="tabs__item">style.css</span></div>
+<pre class="code">&lt;span class=<b class="s">"tag"</b>&gt;标签&lt;/span&gt;
+
+<b class="k">const</b> lines = <b class="n">48</b>;
+<b class="k">const</b> gap = <b class="n">6</b>;
+
+<b class="k">function</b> draw(ctx, img) {
+  <b class="k">for</b> (<b class="k">let</b> i = <b class="n">0</b>; i &lt; lines; i++) {
+    <b class="k">const</b> x = i * gap;
+    <b class="k">const</b> h = sample(img, x);
+    ctx.fillRect(x, <b class="n">0</b>, <b class="n">2</b>, h);
+  }
+}</pre>
+      <div class="foot"><p class="foot__note">一句补充说明</p><span class="pill"><i class="ic" data-i="copy"></i>复制</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 结尾 ===================== -->
+
+<section class="slide slide--end" data-layout="T19 结尾 · 对照">
+  <div class="stage stage--top"><div class="ph" style="width:760px;height:497px"></div></div>
+  <header class="head head--center">
+    <p class="chip">栏目名</p>
+    <h2 class="t-title">结尾标题放在这里<br>两行最好看</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="card split">
+    <div class="row diff"><p class="diff__key">名称</p><p class="row__head grow">条目内容</p><span class="tag tag--green">标签</span></div>
+    <div class="row diff"><p class="diff__key">名称</p><p class="row__head grow">条目内容</p><span class="tag">标签</span></div>
+    <div class="row diff"><p class="diff__key">名称</p><p class="row__head grow">条目内容</p></div>
+  </div>
+</section>
+
+<section class="slide" data-layout="T20 结尾 · 完成">
+  <header class="head head--center">
+    <p class="chip">栏目名</p>
+    <h2 class="t-display">结尾标题放这里<br>两行最好看</h2>
+    <p class="sub">副标题一句话，二十字以内</p>
+  </header>
+  <div class="stage">
+    <div class="card card--dialog split">
+      <div class="done__top"><span class="done__mark"><i class="ic ic--lg" data-i="check"></i></span><p class="t-heading">三条收获</p></div>
+      <ul class="done__list">
+        <li><i class="ic c-green" data-i="check"></i>第一条，一行以内</li>
+        <li><i class="ic c-green" data-i="check"></i>第二条，一行以内</li>
+        <li><i class="ic c-green" data-i="check"></i>第三条，一行以内</li>
+      </ul>
+      <div class="foot foot--base"><p class="foot__note">一句补充说明</p><span class="btn btn--primary">主要操作</span></div>
+    </div>
+  </div>
+</section>
+
+<script src="xhs.js"></script>
+</body>
+</html>
